@@ -1,7 +1,7 @@
 --[[
     BEST TWEEN — v1
     Mobile / Delta / universal / self-learning
-    Loadstring: loadstring(game:HttpGet("https://raw.githubusercontent.com/supercaptain1233/best-tween/main/besttween.lua"))()
+    Loadstring: loadstring(game:HttpGet("https://raw.githubusercontent.com/supercaptain1233/Best-tween/main/Besttween.lua"))()
 ]]
 
 --============ PROTECTION ============
@@ -12,8 +12,8 @@ if typeof(setthreadidentity) == "function" then pcall(setthreadidentity, 7) end
 if typeof(setidentity) == "function" then pcall(setidentity, 7) end
 if typeof(setfpscap) == "function" then pcall(setfpscap, 60) end
 
-local RAW_URL = "https://raw.githubusercontent.com/supercaptain1233/best-tween/main/besttween.lua"
-local PATCH_URL = "https://raw.githubusercontent.com/supercaptain1233/best-tween/main/patches/%s.lua"
+local RAW_URL = "https://raw.githubusercontent.com/supercaptain1233/Best-tween/main/Besttween.lua"
+local PATCH_URL = "https://raw.githubusercontent.com/supercaptain1233/Best-tween/main/patches/%s.lua"
 local FOLDER = "BestTween"
 local STORE = FOLDER .. "/saves.json"
 local TAG = "BestTween_" .. tostring(math.random(100000, 999999))
@@ -735,7 +735,7 @@ local function travel(target)
 end
 
 --============ CELEBRATE ============
-local function celebrate()
+function celebrate()
     if bannerBusy then return end
     bannerBusy = true
 
